@@ -10,7 +10,7 @@
 }
 
 .slide-show, .slide-show a img, .slide-show div {
-  display: block;
+  display: table;
 }
 
 .w3-left, .w3-right, .w3-badge {
