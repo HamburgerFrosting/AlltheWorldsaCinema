@@ -20,16 +20,26 @@
     document.getElementById("mySidebar").style.display = "none";
   }
   </script>
+  <script>
+  // Script to open and close login form
+  function login_form_open() {
+    document.getElementById("login-modal").style.display = "flex";
+  }
+  
+  function login_form_close() {
+    document.getElementById("login-modal").style.display = "none";
+  }
+  </script>
 </head>
 <body>
 
   <!-- Above header -->   
-  <div class="w3-top w3-light-grey">
+  <div class="w3-light-grey">
     <form class="w3-form" action="../search.html">
       <input type="submit" value="&#xf002;" name="search" class="fa w3-button w3-black w3-right search-btn">
       <input type="text" placeholder="search" class="w3-input w3-right search-field">
     </form>
-    <a href="#" class="w3-bar-item w3-button w3-black">LOGIN</a>
+    <button class="w3-bar-item w3-button w3-black" onclick="login_form_open()">LOGIN</button>
   </div>
 
   <!-- Header -->
@@ -61,6 +71,23 @@
     <a href="../articles/" onclick="w3_close()" class="w3-bar-item w3-button">Articles</a>
   </nav>
 
+  <!-- Login modal for administrator -->
+  <div id="login-modal">
+    <form class="modal w3-padding-16" action="#signin">
+      <h1>Sign In</h1>
+      <br>
+      <label for="username">Username</label><br>
+      <input type="text" name="username" id="username">
+      <br>
+      <label for="password">Password</label><br>
+      <input type="password" name="password" id="password">
+      <br>
+      <p><input type="checkbox" checked="checked" name="remember"> Remember me</p><p>Forgot <a href="#">password?</a></p>
+      <input type="submit" class="w3-button w3-black" value="Log In" onclick="login_form_close()">
+      <button type="button" class="w3-button w3-white" onclick="login_form_close()">Close</button>
+    </form>
+  </div>
+  
   <!-- Main content -->
   <main class="w3-content">
     <div class="w3-row">
