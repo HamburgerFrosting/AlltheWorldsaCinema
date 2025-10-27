@@ -6,3 +6,7 @@ body {
   background-image: url("https://hamburgerfrosting.github.io/AlltheWorldsaCinema/pexels-hyrlf-meng-317253942-18413963.jpg");
   background-size: cover;
 }
+
+header {
+  background-color: light-grey;
+}
