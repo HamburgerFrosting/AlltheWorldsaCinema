@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top Films - All the World's a Cinema</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../extra.css">
+  <link rel="stylesheet" href="../tags.css">
+  <link rel="icon" type="image/x-icon" href="../logo.png">
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("myslides");
+    var buttons = document.getElementsByClassName("demo");
+    var desc = document.getElementsByClassName("w3-display-bottomleft");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].classList = "myslides";  
+    }
+    for (i = 0; i < buttons.length; i++) {
+      buttons[i].className = buttons[i].className.replace(" w3-black", "");
+    }
+    for (i = 0; i < desc.length; i++) {
+      desc[i].style.display = "none";
+    }
+    x[slideIndex-1].classList = "myslides slide-show";  
+    buttons[slideIndex-1].className += " w3-black";
+    desc[slideIndex-1].style.display = "flex";
+  }
+  </script>
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mysidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mysidebar").style.display = "none";
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Above header -->   
+  <div class="w3-top w3-light-grey">
+    <form class="w3-form" action="../search.html">
+      <input type="submit" value="&#xf002;" name="search" class="fa w3-button w3-black w3-right search-btn">
+      <input type="text" placeholder="search" class="w3-input w3-right search-field">
+    </form>
+    <a href="#" class="w3-bar-item w3-button w3-black">LOGIN</a>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32">
+    <img src="../logo.png" alt="Logo" class="site-logo"> 
+    <h1><b>All the World's a Cinema</b></h1>
+    <p>All kinds of films from all kinds of places</p> 
+  </header>
+
+  <!-- Navigation for desktop -->
+  <nav class="w3-bar w3-black">
+    <div class="w3-button w3-padding-16 w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">☰</div>
+    <a href="../" class="w3-bar-item w3-button w3-hide-small">Home</a>
+    <a href="../about/" class="w3-bar-item w3-button w3-hide-small">About</a>
+    <a href="../contact/" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    <a href="../filmgallery/" class="w3-bar-item w3-button w3-hide-small">Top Films</a>
+    <a href="../reviews/" class="w3-bar-item w3-button w3-hide-small">Reviews</a>
+    <a href="../articles/" class="w3-bar-item w3-button w3-hide-small">Articles</a>
+  </nav>
+
+  <!-- Navigation for mobile -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-hide-large w3-hide-medium" id="mysidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">X</a>
+    <a href="../" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../about/" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="../contact/" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="../filmgallery/" onclick="w3_close()" class="w3-bar-item w3-button">Top Films</a>
+    <a href="../reviews/" onclick="w3_close()" class="w3-bar-item w3-button">Reviews</a>
+    <a href="../articles/" onclick="w3_close()" class="w3-bar-item w3-button">Articles</a>
+  </nav>
+
+  <!-- Main content -->
+  <main class="w3-content">
+
+    <ul class="breadcrumb">
+      <li><a href="../">Home</a></li>
+      <li>Top Films</li>
+    </ul>
+
+    <div class="w3-row">
+
+      <div class="w3-col l12">
+        <!-- Slideshow showing links to reviews of top films -->
+        <div class="w3-card w3-margin w3-margin-top w3-light-grey w3-center">
+          <h2>Film Recommendation</h2>
+          <div class="w3-content w3-display-container">
+            <a href="#">
+              <img class="myslides slide-show" src="../logo.png">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Film 1
+              </div>
+            </a>
+            <a href="#">
+              <img class="myslides" src="https://picsum.photos/id/161/4240/2832">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Film 2
+              </div>
+            </a>
+            <a href="#">
+              <img class="myslides" src="https://picsum.photos/id/165/2000/1333">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Film 3
+              </div>
+            </a>
+            <a href="#">
+              <img class="myslides" src="https://picsum.photos/id/166/1280/720">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Film 4
+              </div>
+            </a>
+            <a href="#">
+              <img class="myslides" src="https://picsum.photos/id/170/2500/1667">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Film 5
+              </div>
+            </a>
+            <a href="#">
+              <img class="myslides" src="https://picsum.photos/id/172/2000/1325">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Film 6
+              </div>
+            </a>
+            <a href="#">
+              <img class="myslides" src="https://picsum.photos/id/174/1600/589">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Film 7
+              </div>
+            </a>
+            <a href="#">
+              <img class="myslides" src="https://picsum.photos/id/177/2515/1830">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Film 8
+              </div>
+            </a>
+          </div>
+          <div class="w3-center">
+            <div class="w3-section">
+              <button class="w3-button w3-black" onclick="plusDivs(-1)">❮ Prev</button>
+              <button class="w3-button w3-black" onclick="plusDivs(1)">Next ❯</button>
+            </div>
+            <button class="w3-button demo w3-black" onclick="currentDiv(1)">1</button> 
+            <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+            <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+            <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+            <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+            <button class="w3-button demo" onclick="currentDiv(6)">6</button>
+            <button class="w3-button demo" onclick="currentDiv(7)">7</button> 
+            <button class="w3-button demo" onclick="currentDiv(8)">8</button> 
+          </div>
+      </div>
+
+    </div><br>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-center">
+    <p><a href="../sitemap/">Sitemap</a></p>
+    <p>Copyright &#169; 2025 All the World's a Cinema</p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+</body>
+</html>
