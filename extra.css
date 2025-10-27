@@ -4,8 +4,8 @@
   max-height: 100%;
 }
 
-.slide-show {
-  display: flex;
+.slide-show, .slideshow.img, .slideshow.div {
+  display: block;
 }
 
 .w3-left, .w3-right, .w3-badge {
