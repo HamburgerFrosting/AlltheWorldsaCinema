@@ -30,13 +30,29 @@
     document.getElementById("login-modal").style.display = "none";
   }
   </script>
+  <script>
+  // Script to open and close login form
+  function change_page() {
+    var hiddentruths = document.getElementsByClassName("hidden");
+    var revealedtruths = document.getElementsByClassName("revealed");
+    
+    revealedtruths.className = revealedtruths.className.replace("revealed", "hidden")
+    hiddentruths.className = hiddentruths.className.replace("hidden", "revealed")
+    
+    if (document.getElementById("page-button").innerHTML == "Previous") {
+      document.getElementById("page-button").innerHTML = "Next"
+    } else {
+      document.getElementById("page-button").innerHTML = "Previous"
+    }
+  }
+  </script>
 </head>
 <body>
 
   <!-- Above header -->   
   <div class="w3-light-grey">
     <form class="w3-form" action="../search.html">
-      <input type="submit" value="&#xf002" name="search" class="fa w3-button w3-black w3-right search-btn">
+      <input type="submit" value="&#xf002;" name="search" class="fa w3-button w3-black w3-right search-btn">
       <input type="text" placeholder="search" class="w3-input w3-right search-field">
     </form>
     <button class="w3-bar-item w3-button w3-black" onclick="login_form_open()">LOGIN</button>
@@ -74,7 +90,7 @@
   <!-- Login modal for administrator -->
   <div id="login-modal">
     <form class="modal w3-padding-16" action="#signin">
-      <h1>Sign In</h1>
+      <h1>Log In</h1>
       <br>
       <label for="username">Username</label><br>
       <input type="text" name="username" id="username">
@@ -104,20 +120,29 @@
           <div class="w3-container w3-white">
             <h4><b>Contact the Author</b></h4>
             <form class="w3-form" action="#contact">
-              <label for="name" class="w3-label">Name</label>
-              <input type="text" id="name" name="name" class="w3-input w3-border">
-              <label for="email" class="w3-label">Email</label>
-              <input type="email" id="email" name="email" class="w3-input w3-border">
-              <label for="subject" class="w3-label">Subject</label>
-              <input type="text" id="subject" name="subject" class="w3-input w3-border">
-              <label for="message" class="w3-label">Message</label>
-              <textarea id="message" class="w3-input w3-border"></textarea>
-              <input type="submit" class="w3-button w3-black">
+              <label for="name" class="w3-label revealed">Name</label>
+              <input type="text" id="name" name="name" class="w3-input w3-border revealed">
+              <label for="email" class="w3-label revealed">Email</label>
+              <input type="email" id="email" name="email" class="w3-input w3-border revealed">
+              <label for="birthday" class="w3-label revealed">Birthday</label>
+              <input type="date" id="birthday" name="birthday" class="w3-input w3-border revealed">
+              <label for="phone" class="w3-label revealed">Phone</label>
+              <input type="tel" id="phone" name="phone" class="w3-input w3-border revealed" placeholder="555-555-5555">
+              <label for="subject" class="w3-label hidden">Subject</label>
+              <input type="text" id="subject" name="subject" class="w3-input w3-border hidden">
+              <label for="message" class="w3-label hidden">Message</label>
+              <textarea id="message" class="w3-input w3-border hidden"></textarea>   
+              <input type="checkbox" id="sendcopy" name="sendcopy" class="w3-input w3-border"><label for="sendcopy" class="w3-label hidden"> Send me a copy of this message</label><br>
+              <input type="submit" class="w3-button w3-black hidden">
+              <button type="button" class="w3-button w3-black" id="page-button" onclick="change_page()">Next</button>
             </form>
             <h4><b>Sign up for our newsletter</b></h4>
             <form class="w3-form" action="#signup">
-              <label for="email" class="w3-label">Email</label>
-              <input type="email" id="email" name="email" class="w3-input w3-border">
+              <label for="name2" class="w3-label">Name</label>
+              <input type="text" id="name2" name="name2" class="w3-input w3-border">
+              <label for="email2" class="w3-label">Email</label>
+              <input type="email" id="email2" name="email2" class="w3-input w3-border">
+              <input type="checkbox" id="confirmation" name="confirmation"><label for="confirmation" class="w3-label"> Send confirmation</label><br>
               <input type="submit" class="w3-button w3-black">
             </form>
           </div>
