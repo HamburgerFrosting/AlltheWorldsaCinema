@@ -33,16 +33,14 @@
   <script>
   // Script to open and close login form
   function change_page() {
-    var hiddentruths = document.getElementsByClassName("hidden");
-    var revealedtruths = document.getElementsByClassName("revealed");
-    
-    revealedtruths.className = revealedtruths.className.replace("revealed", "hidden")
-    hiddentruths.className = hiddentruths.className.replace("hidden", "revealed")
-    
     if (document.getElementById("page-button").innerHTML == "Previous") {
       document.getElementById("page-button").innerHTML = "Next"
+      document.getElementsByClassName("hidden").style.display = "none";
+      document.getElementsByClassName("revealed").style.display = "block";
     } else {
       document.getElementById("page-button").innerHTML = "Previous"
+      document.getElementsByClassName("hidden").style.display = "block";
+      document.getElementsByClassName("revealed").style.display = "none";
     }
   }
   </script>
@@ -132,7 +130,7 @@
               <input type="text" id="subject" name="subject" class="w3-input w3-border hidden">
               <label for="message" class="w3-label hidden">Message</label>
               <textarea id="message" class="w3-input w3-border hidden"></textarea>   
-              <input type="checkbox" id="sendcopy" name="sendcopy" class="w3-input w3-border"><label for="sendcopy" class="w3-label hidden"> Send me a copy of this message</label><br>
+              <input type="checkbox" id="sendcopy" name="sendcopy" class="w3-input w3-border hidden"><label for="sendcopy" class="w3-label hidden"> Send me a copy of this message</label><br>
               <input type="submit" class="w3-button w3-black hidden">
               <button type="button" class="w3-button w3-black" id="page-button" onclick="change_page()">Next</button>
             </form>
