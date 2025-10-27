@@ -38,7 +38,7 @@
       document.getElementById("multi-step").innerHTML = '<label for="name" class="w3-label">Name</label><input type="text" id="name" name="name" class="w3-input w3-border"><label for="email" class="w3-label">Email</label><input type="email" id="email" name="email" class="w3-input w3-border"><label for="birthday" class="w3-label">Birthday</label><input type="date" id="birthday" name="birthday" class="w3-input w3-border"><label for="phone" class="w3-label">Phone</label><input type="tel" id="phone" name="phone" class="w3-input w3-border" placeholder="555-555-5555">'
     } else {
       document.getElementById("page-button").innerHTML = "Previous"
-      document.getElementById("multi-step").innerHTML = '<label for="subject" class="w3-label">Subject</label><input type="text" id="subject" name="subject" class="w3-input w3-border"><label for="message" class="w3-label">Message</label><textarea id="message" class="w3-input w3-border"></textarea><input type="checkbox" id="sendcopy" name="sendcopy" class="w3-input w3-border"><label for="sendcopy" class="w3-label"> Send me a copy of this message</label><br><input type="submit" class="w3-button w3-black">'
+      document.getElementById("multi-step").innerHTML = '<label for="subject" class="w3-label">Subject</label><input type="text" id="subject" name="subject" class="w3-input w3-border"><label for="message" class="w3-label">Message</label><textarea id="message" class="w3-input w3-border"></textarea><input type="checkbox" id="sendcopy" name="sendcopy"><label for="sendcopy" class="w3-label"> Send me a copy of this message</label><br><input type="submit" class="w3-button w3-black">'
     }
   }
   </script>
@@ -125,6 +125,7 @@
               <label for="phone" class="w3-label">Phone</label>
               <input type="tel" id="phone" name="phone" class="w3-input w3-border" placeholder="555-555-5555">
             </form>
+            <br>
             <button type="button" class="w3-button w3-black" id="page-button" onclick="change_page()">Next</button>
             <h4><b>Sign up for our newsletter</b></h4>
             <form class="w3-form" action="#signup">
