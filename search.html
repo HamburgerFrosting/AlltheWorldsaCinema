@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search - All the World's a Cinema</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./extra.css">
+  <link rel="stylesheet" href="./tags.css">
+  <link rel="icon" type="image/x-icon" href="./logo.png">
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Above header -->   
+  <div class="w3-top w3-light-grey">
+    <form class="w3-form" action="./search.html">
+      <input type="submit" value="&#xf002;" name="search" class="fa w3-button w3-black w3-right search-btn">
+      <input type="text" placeholder="search" class="w3-input w3-right search-field">
+    </form>
+    <a href="#" class="w3-bar-item w3-button w3-black">LOGIN</a>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32">
+    <img src="./logo.png" alt="Logo" class="site-logo"> 
+    <h1><b>All the World's a Cinema</b></h1>
+    <p>All kinds of films from all kinds of places</p> 
+  </header>
+
+  <!-- Navigation for desktop -->
+  <nav class="w3-bar w3-black">
+    <div class="w3-button w3-padding-16 w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">☰</div>
+    <a href="./" class="w3-bar-item w3-button w3-hide-small">Home</a>
+    <a href="./about/" class="w3-bar-item w3-button w3-hide-small">About</a>
+    <a href="./contact/" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    <a href="./filmgallery/" class="w3-bar-item w3-button w3-hide-small">Top Films</a>
+    <a href="./reviews/" class="w3-bar-item w3-button w3-hide-small">Reviews</a>
+    <a href="./articles/" class="w3-bar-item w3-button w3-hide-small">Articles</a>
+  </nav>
+
+  <!-- Navigation for mobile -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-hide-large w3-hide-medium" id="mysidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">X</a>
+    <a href="./" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="./about/" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="./contact/" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="./filmgallery/" onclick="w3_close()" class="w3-bar-item w3-button">Top Films</a>
+    <a href="./reviews/" onclick="w3_close()" class="w3-bar-item w3-button">Reviews</a>
+    <a href="./articles/" onclick="w3_close()" class="w3-bar-item w3-button">Articles</a>
+  </nav>
+
+  <!-- Main content -->
+  <main class="w3-content">
+
+    <!-- Breadcrumb navigation -->
+    <ul class="breadcrumb">
+      <li>Home</li>
+    </ul>
+
+    <!-- Grid description -->
+    <div class="w3-center w3-padding-16">
+      <h2>Search Results</h2>
+    </div>
+
+    <!-- Grid -->
+    <div class="w3-row w3-padding-16">
+
+      <!-- Blog entries -->
+      <div class="w3-col l12 s12">
+        <div class="w3-row-padding">
+          <div class="w3-third w3-container w3-margin-bottom">
+            <a href="#"><img src="https://picsum.photos/id/123/4928/3264" alt="Placeholder" class="w3-hover-opacity thumb"></a>
+            <div class="w3-container w3-white">
+              <a href="#"><p><b>Lorem Ipsum</b></p></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+            </div>
+          </div>
+          <div class="w3-third w3-container w3-margin-bottom">
+            <a href="#"><img src="https://picsum.photos/id/122/4147/2756" alt="Placeholder" class="w3-hover-opacity thumb"></a>
+            <div class="w3-container w3-white">
+              <a href="#"><p><b>Lorem Ipsum</b></p></a>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="w3-third w3-container">
+            <a href="#"><img src="https://picsum.photos/id/125/1500/1000" alt="Placeholder" class="w3-hover-opacity thumb"></a>
+            <div class="w3-container w3-white">
+              <a href="#"><p><b>Lorem Ipsum</b></p></a>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+          </div>
+        </div>
+            
+        <!-- Second Grid -->
+        <div class="w3-row-padding">
+          <div class="w3-third w3-container w3-margin-bottom">
+            <a href="#"><img src="https://picsum.photos/id/128/3823/2549" alt="Placeholder" class="w3-hover-opacity thumb"></a>
+            <div class="w3-container w3-white">
+              <a href="#"><p><b>Lorem Ipsum</b></p></a>
+              <p>Vix dolor iudicabit eu, eruditi invenire ex has, ex mea veniam malorum. Possim graecis ad pri. Nec ne quot...</p>
+            </div>
+          </div>
+          <div class="w3-third w3-container w3-margin-bottom">
+            <a href="#"><img src="https://picsum.photos/id/133/2742/1828" alt="Placeholder" class="w3-hover-opacity thumb"></a>
+            <div class="w3-container w3-white">
+              <a href="#"><p><b>Lorem Ipsum</b></p></a>
+              <p>Te est hinc justo. Debet deleniti suscipit vel at, modus admodum ponderum has at. Per quas repudiandae id...</p>
+            </div>
+          </div>
+          <div class="w3-third w3-container">
+            <a href="#"><img src="https://picsum.photos/id/131/4698/3166" alt="Placeholder" class="w3-hover-opacity thumb"></a>
+            <div class="w3-container w3-white">
+              <a href="#"><p><b>Lorem Ipsum</b></p></a>
+              <p>Quo graeco prodesset persecuti an, quod quidam offendit per no, vis solum erroribus complectitur et.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main><br>
+  <!-- Pagination -->
+  <div class="w3-bar w3-center">
+    <a href="#" class="w3-button">&laquo;</a>
+    <a href="#" class="w3-button w3-black">1</a>
+    <a href="#" class="w3-button">2</a>
+    <a href="#" class="w3-button">3</a>
+    <a href="#" class="w3-button">4</a>
+    <a href="#" class="w3-button">&raquo;</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-center">
+    <p><a href="./sitemap/">Sitemap</a></p>
+    <p>Copyright &#169; 2025 All the World's a Cinema</p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+</body>
+</html>
