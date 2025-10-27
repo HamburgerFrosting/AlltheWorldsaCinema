@@ -26,11 +26,10 @@
     var i;
     var x = document.getElementsByClassName("myslides");
     var buttons = document.getElementsByClassName("demo");
-    var desc = document.getElementsByClassName("w3-display-bottomleft");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
-      x[i].classList = "myslides";  
+      x[i].classList = "w3-content w3-display-container myslides";  
     }
     for (i = 0; i < buttons.length; i++) {
       buttons[i].className = buttons[i].className.replace(" w3-black", "");
@@ -38,9 +37,8 @@
     for (i = 0; i < desc.length; i++) {
       desc[i].style.display = "none";
     }
-    x[slideIndex-1].classList = "myslides slide-show";  
+    x[slideIndex-1].classList = "w3-content w3-display-container myslides slide-show";  
     buttons[slideIndex-1].className += " w3-black";
-    desc[slideIndex-1].style.display = "flex";
   }
   </script>
   <script>
@@ -137,8 +135,8 @@
           <h2>Film Recommendations (in no particular order)</h2>
           <div class="w3-content w3-display-container myslides slide-show">
             <a href="#">
-              <img src="../Jedi-710892914.png" alt="Return of the Jedi">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+              <img src="../Jedi-710892914.png" alt="Star Wars Episode VI: Return of the Jedi">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
                 Star Wars Episode VI: Return of the Jedi
               </div>
             </a>
@@ -146,7 +144,7 @@
           <div class="w3-content w3-display-container myslides">
             <a href="#">
               <img src="../GF23_Posters_2023-02-01_11_Spirited-692x1024-134155160.jpg" alt="Spirited Away">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
                 Spirited Away
               </div>
             </a>
@@ -154,7 +152,7 @@
           <div class="w3-content w3-display-container myslides">
             <a href="#">
               <img src="../An_American_Tail_poster.jpeg" alt="An American Tail">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
                 An American Tail
               </div>
             </a>
@@ -162,40 +160,40 @@
           <div class="w3-content w3-display-container myslides">
             <a href="#">
               <img src="../p11642_v_h8_ak-2831644895.jpg" alt="Indiana Jones and the Last Crusade">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
                 Indiana Jones and the Last Crusade
               </div>
             </a>
           </div>
           <div class="w3-content w3-display-container myslides">
             <a href="#">
-              <img src="https://picsum.photos/id/170/2500/1667">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Film 5
+              <img src="../49FYbfef117xFlzQBXX84M9dKEg-3539421582.jpg" alt="The Princess Bride">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                The Princess Bride
               </div>
             </a>
           </div>
           <div class="w3-content w3-display-container myslides">
             <a href="#">
-              <img src="https://picsum.photos/id/172/2000/1325">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Film 6
+              <img src="../The-Blues-Brothers-Movie-Poster-4009198584.jpg" alt="The Blues Brothers">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                The Blues Brothers
               </div>
             </a>
           </div>
           <div class="w3-content w3-display-container myslides">
             <a href="#">
-              <img src="https://picsum.photos/id/174/1600/589">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Film 7
+              <img src="../Back_to_the_Future_1985237-3232730293.jpg" alt="Back to the Future">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                Back to the Future
               </div>
             </a>
           </div>
           <div class="w3-content w3-display-container myslides">
             <a href="#">
-              <img src="https://picsum.photos/id/177/2515/1830">
-              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                Film 8
+              <img src="../ems-2985567968.jpeg" alt="WALL-E">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                WALL-E
               </div>
             </a>
           </div>
