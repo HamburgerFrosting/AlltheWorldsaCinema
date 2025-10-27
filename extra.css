@@ -4,12 +4,12 @@
   max-height: 100%;
 }
 
-.myslides.img {
+.myslides a img {
   max-width: 900px;
   max-height: 500px;
 }
 
-.slide-show, .slide-show.img, .slide-show.div {
+.slide-show, .slide-show a img, .slide-show div {
   display: block;
 }
 
