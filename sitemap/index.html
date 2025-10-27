@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sitemap - All the World's a Cinema</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../extra.css">
+  <link rel="stylesheet" href="../tags.css">
+  <link rel="icon" type="image/x-icon" href="../logo.png">
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "grid";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Above header -->   
+  <div class="w3-top w3-light-grey">
+    <form class="w3-form" action="../search.html">
+      <input type="submit" value="&#xf002;" name="search" class="fa w3-button w3-black w3-right search-btn">
+      <input type="text" placeholder="search" class="w3-input w3-right search-field">
+    </form>
+    <a href="#" class="w3-bar-item w3-button w3-black">LOGIN</a>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32">
+    <img src="../logo.png" alt="Logo" class="site-logo">
+    <h1><b>All the World's a Cinema</b></h1>
+    <p>All kinds of films from all kinds of places</p> 
+  </header>
+
+  <!-- Navigation for desktop -->
+  <nav class="w3-bar w3-black">
+    <div class="w3-button w3-padding-16 w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">☰</div>
+    <a href="../" class="w3-bar-item w3-button w3-hide-small">Home</a>
+    <a href="../about/" class="w3-bar-item w3-button w3-hide-small">About</a>
+    <a href="../contact/" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    <a href="../filmgallery/" class="w3-bar-item w3-button w3-hide-small">Top Films</a>
+    <a href="../reviews/" class="w3-bar-item w3-button w3-hide-small">Reviews</a>
+    <a href="../articles/" class="w3-bar-item w3-button w3-hide-small">Articles</a>
+  </nav>
+
+  <!-- Navigation for mobile -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left w3-hide-large w3-hide-medium" id="mysidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">X</a>
+    <a href="../" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../about/" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="../contact/" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="../filmgallery/" onclick="w3_close()" class="w3-bar-item w3-button">Top Films</a>
+    <a href="../reviews/" onclick="w3_close()" class="w3-bar-item w3-button">Reviews</a>
+    <a href="../articles/" onclick="w3_close()" class="w3-bar-item w3-button">Articles</a>
+  </nav>
+
+  <!-- Main content -->
+  <main class="w3-content">
+    <div class="w3-row">
+      <div class="w3-col l12">
+        <div class="w3-card w3-margin w3-margin-top">
+          <div class="w3-container w3-white">
+            <h1>Sitemap</h1>
+            <div class="section">
+              <h3>Basic Information</h3>
+              <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../about/">About Me (and the site)</a>
+                  <ul>
+                    <li><a href="/interests/">Things I Find Interesting</a></li>
+                  </ul>
+                </li>
+                <li><a href="../contact/">Contact</a>
+                  <ul>
+                    <li><a href="mailto:author@atwac.com"><i class="fa size-16">&#xf0e0;</i> Email</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw"><i class="fa size-16">&#xf16a;</i> YouTube</a></li>
+                    <li><a href="https://soundcloud.com/idonthaveasoundcloudlol"><i class="fa size-16">&#xf1be;</i> SoundCloud</a></li>
+                  </ul>
+                </li>
+                <li><a href="../projects/">My Other Projects</a></li>
+              </ul>
+            </div>
+            <div class="section">
+              <h3>Content</h3>
+              <ul>
+                <li><a href="../reviews/">Reviews</a></li>
+                <li><a href="../articles/">Articles</a></li>
+                <li><a href="/testimonials/">Testimonials</a></li>
+                <li><a href="../filmgallery/">Top Films</a></li>
+                <li><a href="../updates/">Updates</a></li>
+                <li><a href="../search/">Normal Search</a></li>
+                <li><a href="../advsearch/">Advanced Search</a></li>
+              </ul>
+            </div>
+            <div class="section">
+              <h3>Policies and Legal Information</h3>
+              <ul>
+                <li><a href="../privacy/">Privacy Policies</a></li>
+                <li><a href="../cookies/">Cookies</a></li>
+                <li><a href="../copyright/">Copyright Information</a></li>
+                <li><a href="../comments/">Comment Policy</a></li>
+                <li><a href="../collabs/">Collaboration Rules</a></li>
+              </ul>
+            </div>
+            <div class="section">
+              <h3>Extra</h3>
+              <ul>
+                <li><a href="/login/">Login</a></li>
+                <li><a href="/experience/">Experience</a>
+                  <ul>
+                    <li><a href="/education/">Education</a></li>
+                  </ul>
+                </li>
+                <li><a href="/donations/">Donations</a></li>
+                <li><a href="/friends/">Friends of the Site</a></li>
+                <li><a href="/special/">A Special Place</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <!-- Footer -->
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-center">
+    <p><a href="../sitemap/">Sitemap</a></p>
+    <p>Copyright &#169; 2025 All the World's a Cinema</p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+</body>
