@@ -64,15 +64,16 @@
   <!-- Above header -->   
   <nav class="w3-light-grey">
     <form class="w3-form" action="../search.html">
-      <input type="submit" value="&#xf002;" name="search" class="fa w3-button w3-black w3-right search-btn">
-      <input type="text" placeholder="search" class="w3-input w3-right search-field">
+      <input type="submit" value="&#xf002;" class="fa w3-button w3-black w3-right search-btn">
+      <input type="text" placeholder="search" name="search" id="search-field" class="w3-input w3-right search-field">
+      <label for="search-field" class="w3-right">Search here: </label>
     </form>
     <button class="w3-bar-item w3-button w3-black" onclick="login_form_open()">LOGIN</button>
   </nav>
 
   <!-- Header -->
   <header class="w3-container w3-center w3-padding-32">
-    <img src="../logo.png" alt="Logo" class="site-logo"> 
+    <img src="../logo.png" alt="Website Logo" class="site-logo"> 
     <h1><b>All the World's a Cinema</b></h1>
     <p class="w3-black">All kinds of films from all kinds of places</p> 
   </header>
@@ -119,8 +120,9 @@
   <!-- Main content -->
   <main class="w3-content">
 
+    <!-- Breadcrumb navigation -->
     <ul class="breadcrumb">
-      <li><a href="../">Home</a></li>
+      <li><a href="./">Home</a></li>
       <li>Top Films</li>
     </ul>
 
