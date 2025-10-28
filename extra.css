@@ -60,11 +60,20 @@
   max-height: 100%;
 }
 
-.myslides a img {
-  max-width: 900px;
-  max-height: 500px;
+@media (height > 1368px) {
+  .myslides a img {
+    max-width: 900px;
+    max-height: 500px;
+  }
 }
 
+@media (height <= 1368px) {
+  .myslides a img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+  
 .slide-show, .slide-show a img, .slide-show div {
   display: table;
 }
