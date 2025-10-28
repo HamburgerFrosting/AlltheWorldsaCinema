@@ -1,3 +1,9 @@
+/* Video on "About" page */
+
+.author-video {
+  max-width: 100%;
+}
+
 /* Accordion styles */
 
 .accordion {
