@@ -1,7 +1,19 @@
 /* Video on "About" page */
 
 .author-video {
-  max-width: 947px;
+  display: flex;
+}
+
+@media (height > 600px) {
+  .author-video {
+    max-width: 947px;
+  }
+}
+
+@media (height <= 600px) {
+  .author-video {
+    max-width: 50%;
+  }
 }
 
 /* Accordion styles */
@@ -110,7 +122,7 @@
   }
 }
 
-@media (height < 600px) {
+@media (height <= 600px) {
   .thumb {
     max-width: 100%;
     min-width: 100%;
