@@ -4,13 +4,13 @@
   display: flex;
 }
 
-@media (height > 600px) {
+@media (height > 1280px) {
   .author-video {
     max-width: 947px;
   }
 }
 
-@media (height <= 600px) {
+@media (height <= 1280px) {
   .author-video {
     max-width: 50%;
   }
