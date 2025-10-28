@@ -139,12 +139,12 @@ ul.breadcrumb li+li:before {
 }
 
 ul.breadcrumb li a {
-  color: #0275d8;
+  color: #000080;
   text-decoration: none;
 }
 
 ul.breadcrumb li a:hover {
-  color: #01447e;
+  color: #000080;
   text-decoration: underline;
 }
 
