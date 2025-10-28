@@ -12,7 +12,7 @@
 
 @media (height <= 1280px) {
   .author-video {
-    max-width: 50%;
+    max-width: 100%;
   }
 }
 
